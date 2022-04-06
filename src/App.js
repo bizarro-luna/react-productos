@@ -1,24 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import Router from './Router';
+
+//Importaciones de mis componenetes
+//import MiComponente from './components/MiComponente';
+import Peliculas from './components/Peliculas';
+
+//import SeccionPruebas from './components/SeccionPruebas';
+
+
+function holaMundo(nombre,edad){
+  let presentacion=
+            <di>
+
+                <h2>Hola, soy {nombre} desde holamundo</h2>
+                <h3>Tengo {edad}</h3> 
+            </di>;
+  return presentacion;
+}
+
 
 function App() {
+
+  let nombre="Erick Hector Luna Ramirez";
+  
+  
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+           
+        <Router/>
+        {/*
+          <Peliculas/>
+        */} 
     </div>
+
   );
 }
 
